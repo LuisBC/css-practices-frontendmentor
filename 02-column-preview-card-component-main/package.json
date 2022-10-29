@@ -1,0 +1,26 @@
+{
+  "name": "02-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisBC/css-practise-projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisBC/css-practise-projects/issues"
+  },
+  "homepage": "https://github.com/LuisBC/css-practise-projects#readme",
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}

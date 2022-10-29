@@ -1,0 +1,115 @@
+@use './variables';
+
+%bg-image {
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+}
+
+%username-age {
+  display: inline;
+  font-size: 1.1rem;
+}
+
+html,
+body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  background-color: variables.$clr-primary-dark-cyan;
+
+  .bg-image-top {
+    @extend %bg-image;
+    right: 50%;
+    bottom: 50%;
+  }
+
+  .bg-image-bottom {
+    @extend %bg-image;
+    left: 50%;
+    top: 50%;
+  }
+
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    z-index: 1;
+    position: relative;
+
+    .header {
+      height: 140px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .user-info {
+      border-bottom: 1px solid #e6e6e6;
+      padding: 85px 0 25px 0;
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+        padding: 5px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 85px;
+        background: white;
+        left: calc(50% - 50px - 5px);
+      }
+
+      .username {
+        @extend %username-age;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$clr-primary-dark-blue;
+      }
+
+      .age {
+        @extend %username-age;
+        font-weight: variables.$font-weight-regular;
+        color: variables.$clr-primary-dark-grayish-blue;
+        margin-left: 0.3rem;
+      }
+
+      .location {
+        margin-top: 0.8rem;
+        font-weight: variables.$font-weight-regular;
+        color: variables.$clr-primary-dark-grayish-blue;
+        font-size: 0.9rem;
+      }
+    }
+
+    .stats {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 1.8rem 0;
+
+        li {
+          list-style-type: none;
+
+          h3 {
+            color: variables.$clr-primary-dark-blue;
+            font-size: 1.15ssrem;
+          }
+
+          p {
+            margin-top: 0.5rem;
+            font-size: 0.65rem;
+            letter-spacing: 0.1rem;
+            color: variables.$clr-primary-dark-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+html,
+body {
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html,
+body {
+  background: linear-gradient(#af67e9 20%, #6565e7);
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+html .card,
+body .card {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0px 80px 45px -45px rgba(0, 0, 0, 0.3);
+  margin: 148px 20px 85px 20px;
+  height: 100%;
+  max-width: 325px;
+}
+html .card .image,
+body .card .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .card .image #desktop-box-img,
+html .card .image #desktop-img,
+body .card .image #desktop-box-img,
+body .card .image #desktop-img {
+  display: none;
+}
+html .card .image #mobile-img,
+body .card .image #mobile-img {
+  padding-right: 30px;
+  position: absolute;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 30px 0px #f0f0fc);
+}
+html .card .content,
+body .card .content {
+  margin-top: 8.1rem;
+  padding: 3.2rem 1.9rem 4.2rem 1.9rem;
+}
+html .card .content h1,
+body .card .content h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: #1d1e35;
+}
+html .card .content ul,
+body .card .content ul {
+  margin-top: 1.4rem;
+}
+html .card .content ul li,
+body .card .content ul li {
+  list-style-type: none;
+  border-bottom: 1px solid #e7e7e9;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+html .card .content ul li .container-title-description,
+body .card .content ul li .container-title-description {
+  display: flex;
+  flex-direction: column;
+}
+html .card .content ul li .container-title-description h3,
+body .card .content ul li .container-title-description h3 {
+  font-size: 1.1rem;
+}
+html .card .content ul li .container-title-description p,
+body .card .content ul li .container-title-description p {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #787887;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+html .card .content ul li .container-arrow,
+body .card .content ul li .container-arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40px;
+}
+html .card .content ul li .container-arrow img,
+body .card .content ul li .container-arrow img {
+  height: 7px;
+}
+
+.list-item-selected .container-title-description h3 {
+  color: #4a4b5e;
+  font-weight: 700;
+}
+.list-item-selected .container-title-description p {
+  display: block;
+}
+.list-item-selected .container-arrow img {
+  transform: rotate(180deg);
+}
+
+.list-item-non-selected .container-title-description h3 {
+  color: #787887;
+  font-weight: 400;
+}
+.list-item-non-selected .container-title-description p {
+  display: none;
+}
+.list-item-non-selected:hover .container-title-description h3 {
+  color: #f47c57;
+}
+
+@media only screen and (min-width: 992px) {
+  html .card,
+body .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  html .card .image,
+body .card .image {
+    flex: 1;
+  }
+  html .card .image #desktop-box-img,
+html .card .image #desktop-img,
+body .card .image #desktop-box-img,
+body .card .image #desktop-img {
+    display: block;
+  }
+  html .card .image #mobile-img,
+body .card .image #mobile-img {
+    display: none;
+  }
+  html .card .image #desktop-box-img,
+body .card .image #desktop-box-img {
+    z-index: 1;
+    width: 160px;
+    left: -10%;
+    bottom: 25%;
+    position: absolute;
+  }
+  html .card .image #desktop-img,
+body .card .image #desktop-img {
+    left: -70px;
+    bottom: 10%;
+    width: 400px;
+    position: absolute;
+    padding-bottom: 20px;
+  }
+  html .card .content,
+body .card .content {
+    flex: 1;
+    margin-top: 0;
+    padding: 5.5rem 0rem 6rem 1rem;
+  }
+  html .card .content h1,
+body .card .content h1 {
+    text-align: left;
+    font-size: 2.4rem;
+  }
+  html .card .content ul,
+body .card .content ul {
+    margin-top: 1.2rem;
+  }
+  html .card .content ul li,
+body .card .content ul li {
+    width: 75%;
+  }
+}

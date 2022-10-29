@@ -1,0 +1,113 @@
+.contain {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  margin: 2rem 0;
+}
+
+.card {
+  padding: 2.6rem;
+}
+.card img {
+  width: 55px;
+  height: auto;
+}
+.card h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  margin: 2rem 0;
+  font-size: 2.1rem;
+}
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.card button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+  border: 0;
+  padding: 0.7rem 1.8rem;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #f2f2f2;
+  font-size: 0.9rem;
+}
+
+.sedan {
+  background-color: #e38826;
+}
+.sedan button {
+  color: #e38826;
+}
+.sedan button:active {
+  background-color: #e38826;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.suv {
+  background-color: #006970;
+}
+.suv button {
+  color: #006970;
+}
+.suv button:active {
+  background-color: #006970;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.luxury {
+  background-color: #004241;
+}
+.luxury button {
+  color: #004241;
+}
+.luxury button:active {
+  background-color: #004241;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+@media only screen and (min-width: 992px) {
+  html,
+body {
+    height: 100%;
+  }
+
+  .contain {
+    display: flex;
+    flex-direction: row;
+    width: 840px;
+  }
+}
+html,
+body {
+  box-sizing: border-box;
+  font-size: 15px;
+  background: #f2f2f2;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

@@ -1,0 +1,98 @@
+@use 'variables';
+
+.contain {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  margin: 2rem 0;
+}
+
+.card {
+  padding: 2.6rem;
+
+  img {
+    width: 55px;
+    height: auto;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-family: variables.$font-familiy-primary;
+    color: variables.$clr-neutral-light-gray;
+    margin: 2rem 0;
+    font-size: 2.1rem;
+  }
+
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: variables.$clr-neutral-transparent-white;
+  }
+
+  button {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: variables.$clr-neutral-light-gray;
+    border: 0;
+    padding: 0.7rem 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: 2px solid variables.$clr-neutral-light-gray;
+    font-size: 0.9rem;
+  }
+}
+
+.sedan {
+  background-color: variables.$clr-primary-orange;
+
+  button {
+    color: variables.$clr-primary-orange;
+
+    &:active {
+      background-color: variables.$clr-primary-orange;
+      border: 2px solid variables.$clr-neutral-light-gray;
+      color: variables.$clr-neutral-light-gray;
+    }
+  }
+}
+
+.suv {
+  background-color: variables.$clr-primary-cyan;
+
+  button {
+    color: variables.$clr-primary-cyan;
+
+    &:active {
+      background-color: variables.$clr-primary-cyan;
+      border: 2px solid variables.$clr-neutral-light-gray;
+      color: variables.$clr-neutral-light-gray;
+    }
+  }
+}
+
+.luxury {
+  background-color: variables.$clr-primary-dark-cyan;
+
+  button {
+    color: variables.$clr-primary-dark-cyan;
+
+    &:active {
+      background-color: variables.$clr-primary-dark-cyan;
+      border: 2px solid variables.$clr-neutral-light-gray;
+      color: variables.$clr-neutral-light-gray;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    height: 100%;
+  }
+  .contain {
+    display: flex;
+    flex-direction: row;
+    width: 840px;
+  }
+}

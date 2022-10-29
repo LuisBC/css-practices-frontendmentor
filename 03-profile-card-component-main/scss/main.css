@@ -1,0 +1,135 @@
+html,
+body {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html .bg-image-bottom,
+body .bg-image-bottom, html .bg-image-top,
+body .bg-image-top {
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+}
+
+html .card .user-info .age,
+body .card .user-info .age, html .card .user-info .username,
+body .card .user-info .username {
+  display: inline;
+  font-size: 1.1rem;
+}
+
+html,
+body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  background-color: #19a2ae;
+}
+html .bg-image-top,
+body .bg-image-top {
+  right: 50%;
+  bottom: 50%;
+}
+html .bg-image-bottom,
+body .bg-image-bottom {
+  left: 50%;
+  top: 50%;
+}
+html .card,
+body .card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  z-index: 1;
+  position: relative;
+}
+html .card .header,
+body .card .header {
+  height: 140px;
+}
+html .card .header img,
+body .card .header img {
+  height: 100%;
+  width: 100%;
+}
+html .card .user-info,
+body .card .user-info {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 85px 0 25px 0;
+  text-align: center;
+}
+html .card .user-info img,
+body .card .user-info img {
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 85px;
+  background: white;
+  left: calc(50% - 50px - 5px);
+}
+html .card .user-info .username,
+body .card .user-info .username {
+  font-weight: 700;
+  color: #2d3248;
+}
+html .card .user-info .age,
+body .card .user-info .age {
+  font-weight: 400;
+  color: #6a6f81;
+  margin-left: 0.3rem;
+}
+html .card .user-info .location,
+body .card .user-info .location {
+  margin-top: 0.8rem;
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 0.9rem;
+}
+html .card .stats ul,
+body .card .stats ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1.8rem 0;
+}
+html .card .stats ul li,
+body .card .stats ul li {
+  list-style-type: none;
+}
+html .card .stats ul li h3,
+body .card .stats ul li h3 {
+  color: #2d3248;
+  font-size: 1.15ssrem;
+}
+html .card .stats ul li p,
+body .card .stats ul li p {
+  margin-top: 0.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  color: #6a6f81;
+}
